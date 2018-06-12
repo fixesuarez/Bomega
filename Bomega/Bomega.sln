@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bomega.WebApp", "Bomega.WebApp\Bomega.WebApp.csproj", "{CCD0A84B-F2EB-4735-80D8-4BE40CD4033B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCD0A84B-F2EB-4735-80D8-4BE40CD4033B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCD0A84B-F2EB-4735-80D8-4BE40CD4033B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCD0A84B-F2EB-4735-80D8-4BE40CD4033B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCD0A84B-F2EB-4735-80D8-4BE40CD4033B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03D8892D-3831-47D4-B8F5-E2883B2BDA42}
+	EndGlobalSection
+EndGlobal
