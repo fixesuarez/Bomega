@@ -1,6 +1,8 @@
 ﻿using System.Security.Claims;
 using System.Text;
+using Bomega.DAL;
 using Bomega.WebApp.Authentication;
+using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +25,7 @@ namespace Bomega.WebApp
         {
             services.AddCors();
             services.AddMvc();
+            services.AddTransient( _ => new UserGateway( Configuration[ "azure:ConnectionString" ] ) );
 
             string secretKey = Configuration[ "JwtBearer:SigningKey" ];
             SymmetricSecurityKey signingKey = new SymmetricSecurityKey( Encoding.ASCII.GetBytes( secretKey ) );
@@ -67,6 +70,10 @@ namespace Bomega.WebApp
                     o.Scope.Add( "playlist-read-private" );
                     o.Scope.Add( "playlist-read-collaborative" );
                     o.SaveTokens = true;
+                    o.Events = new OAuthEvents
+                    {
+                        OnCreatingTicket = 
+                    };
                 } );
         }
 

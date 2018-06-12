@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bomega.WebApp", "Bomega.WebApp\Bomega.WebApp.csproj", "{CCD0A84B-F2EB-4735-80D8-4BE40CD4033B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bomega.WebApp", "Bomega.WebApp\Bomega.WebApp.csproj", "{CCD0A84B-F2EB-4735-80D8-4BE40CD4033B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bomega.DAL", "Bomega.DAL\Bomega.DAL.csproj", "{40E1B542-C907-4572-8A86-80BB8075D09B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CCD0A84B-F2EB-4735-80D8-4BE40CD4033B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCD0A84B-F2EB-4735-80D8-4BE40CD4033B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCD0A84B-F2EB-4735-80D8-4BE40CD4033B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40E1B542-C907-4572-8A86-80BB8075D09B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40E1B542-C907-4572-8A86-80BB8075D09B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40E1B542-C907-4572-8A86-80BB8075D09B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40E1B542-C907-4572-8A86-80BB8075D09B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
