@@ -2,6 +2,7 @@
 using System.Text;
 using Bomega.DAL;
 using Bomega.WebApp.Authentication;
+using Bomega.WebApp.Authentication.Spotify;
 using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -72,7 +73,7 @@ namespace Bomega.WebApp
                     o.SaveTokens = true;
                     o.Events = new OAuthEvents
                     {
-                        OnCreatingTicket = 
+                        OnCreatingTicket = ctx => ctx.HttpContext.RequestServices.GetRequiredService<SpotifyAuthenticationManager>().OnCreatingTicket( ctx )
                     };
                 } );
         }

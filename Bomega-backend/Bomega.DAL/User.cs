@@ -1,11 +1,13 @@
-﻿namespace Bomega.DAL
+﻿using Microsoft.WindowsAzure.Storage.Table;
+
+namespace Bomega.DAL
 {
-    public class User
+    public class User : TableEntity
     {
-        string Guid { get; set; }
-        string SpotifyId { get; set; }
-        string DeezerId { get; set; }
-        string FacebookId { get; set; }
-        string Name { get; set; }
+        public string Guid { get; set; }
+        public string IdSpotify { get; set; }
+        public string IdDeezer { get; set; }
+        public string IdFacebook { get; set; }
+        public string Name { get; set; }
     }
 }
